@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="wellness">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title></title>
+
+	<link rel="manifest" href="manifest.json">
+
+	<link href="../../lib/ionic/css/ionic.css" rel="stylesheet">
+	<link href="sections.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+-->
+<!--Angular-->
+<script src="../../angular/angular.min.js"></script>
+<script src="../../angular/angular-cookies.js"></script>
+
+<!-- ionic/angularjs js -->
+<script src="../../lib/ionic/js/ionic.bundle.js"></script>
+
+
+
+<!-- cordova script (this will be a 404 during development) -->
+<script src="../../cordova.js"></script>
+
+<!-- your app's js -->
+<script src="app.js"></script>
+<link rel="stylesheet" href="sections.css">
+
+<!--angular toaster -->
+<script src="../../angular/toaster/toaster.js"></script>
+<link rel="stylesheet" href="../../angular/toaster/toaster.css">
+
+<!--controller-->
+<script src="sectionsCtrl.js"></script>
+<script src="../../config/config.js"></script> 
+<style type="text/css">
+	#loading-bar-spinner {
+    display: block;
+    position: fixed;
+    z-index: 10002;
+    top: 389px;
+    left: 175px;
+   }
+</style>
+</head>
+<body ng-controller="sectionController">
+<toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+	<ion-pane>
+		<ion-side-menus>
+			<!-- Main content -->
+			<ion-side-menu-content>
+
+				<div class="bar bar-header bar-positive item-input-inset">
+					<button menu-toggle="left" class="button button-icon icon ion-navicon" ng-click="toggleLeft()"></button>
+					<h2 class = "title" style="font-size:14px;"><label>Your well being <br> Check different aspects (5 Sections)</label></h2>
+				</div>
+				<ion-content><br><br><br><br>
+				 <div class="container">
+					<button class = "button button-block button-royal psychological" ng-click="psychological()" ng-disabled="psy">Psychological well being</button><br>
+					<button class = "button button-block button-balanced emotional" ng-click="emotion()" ng-disabled="emo">Emotional well being</button><br>
+					<button class = "button button-block button-energized social" ng-click="social()" ng-disabled="sco">Social well being</button><br>
+					<button class = "button button-block button-royal distress" ng-click="distress()" ng-disabled="dist">Your Distress</button><br>
+					<button class = "button button-block button-balanced activity" ng-click="activity()" ng-disabled="act">Your Activity Pattern</button>
+				</div>
+				</ion-content><br>
+				<div class = "bar bar-footer footer">
+				<h3 class = "title" style="font-size:14px;">Complete all measures once to get your first feedback</h3>
+				</div>
+
+			</ion-side-menu-content>
+			<div id="loading-bar-spinner" ng-show="loading"><div><img src="../../angular/loading/loading.gif" width="20%"></div></div>
+
+			<!-- Left Side Menu -->
+			<ion-side-menu side="left" class="listColor">
+				<div class="item item-avatar listColor">
+					<h2>Hello, {{username | capitalize}}</h2>
+				</div>
+				<ion-list>
+					<ion-item menu-close ng-click="summary()" class="listColor">
+						My Summary
+					</ion-item>
+					<ion-item menu-close ng-click="overall_summary()" class="listColor">
+						My Overall Summary
+					</ion-item>
+					<ion-item menu-close class="listColor" ng-click="useful()">
+						Useful Resources
+					</ion-item>
+					<ion-item menu-close class="listColor" ng-click="reference()">
+						References & External Links
+					</ion-item>
+					<ion-item menu-close class="listColor" ng-show="navenable <= 4"  ng-click="resumeclick()">
+						Resume section
+					</ion-item>
+					<ion-item menu-close class="listColor" ng-click="homeclick()">
+						Home
+					</ion-item>
+					<ion-item menu-close class="listColor" ng-click="logout()">
+						Logout
+					</ion-item>
+				</ion-list>
+			</ion-side-menu>
+		</ion-side-menus>
+	  </ion-pane>
+	</body>
+	</html>

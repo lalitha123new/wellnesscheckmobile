@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Wellness-check",
+  "short_name": "Wellness-check",
+  "version": "io.nimhans.wellness",
+  "description": "Wellness- check is an internet- based program to track various aspects.",
+  "author": "Wellness-check Team",
+  "icons": [],
+  "start_url": "index.html"
+}

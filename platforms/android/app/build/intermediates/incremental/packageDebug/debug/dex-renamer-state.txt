@@ -1,0 +1,4 @@
+#Mon Jun 01 11:45:42 IST 2020
+base.0=C\:\\Users\\admin\\Desktop\\wellness-check\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

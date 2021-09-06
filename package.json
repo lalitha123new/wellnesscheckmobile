@@ -1,0 +1,22 @@
+{
+  "name": "io.nimhans.wellness",
+  "version": "1.0.2",
+  "displayName": "Wellness-check",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "com.borismus.webintent": {}
+    }
+  },
+  "dependencies": {
+    "com.borismus.webintent": "https://github.com/cordova-misc/cordova-webintent.git",
+    "cordova-android": "^7.1.1",
+    "cordova-browser": "~5.0.3",
+    "cordova-plugin-whitelist": "1",
+    "cordova-webintent": "git+https://github.com/cordova-misc/cordova-webintent.git"
+  }
+}

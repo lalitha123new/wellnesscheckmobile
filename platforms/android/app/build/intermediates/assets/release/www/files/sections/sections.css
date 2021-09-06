@@ -1,0 +1,35 @@
+.psychological{
+
+	background-color: #575DA4 !important;
+	font-weight: bold;
+}
+.emotional{
+    
+    background-color: #FF533D !important;
+    font-weight: bold;
+}
+.social{
+
+    background-color: #1FB58F !important;
+    font-weight: bold;
+}
+.distress{
+
+ background-color: #EAB126 !important;
+ font-weight: bold;
+}
+.activity{
+
+ background-color: #4AB366 !important;
+ font-weight: bold;
+}
+  .listColor{
+
+  	background-color: #886aea !important;
+  	color: white;
+  }
+  .footer{
+
+    background-color: #3C3C3C !important;
+    color: white;
+  }

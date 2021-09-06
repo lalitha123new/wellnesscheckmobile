@@ -1,0 +1,4 @@
+#Mon Jun 01 15:28:29 IST 2020
+base.0=C\:\\Users\\admin\\Desktop\\wellness-check\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.borismus.webintent": {
+      "PACKAGE_NAME": "io.nimhans.wellness"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.nimhans.wellness"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.nimhans.wellness"
+    }
+  },
+  "dependent_plugins": {}
+}
