@@ -1,0 +1,4 @@
+
+
+
+aby@aby-ThinkPad-T430:~/wellness-check$ cordova build android --release -- --keystore=app-key.keystore --storePassword=wellness --alias=app-key --password=wellness
